@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <textarea  >Le formulaire d’authentification contient quatre éléments : une zone de texte, une zone de mot de passe, un bouton pour la validation et un 
+            bouton pour la réinitialisation</textarea>
+            <fieldset>
+                <legend>gender:</legend>
+                <input type="radio" id="female" name="genre" value="feminin">
+                <label for="female">feminin:</label>
+                <input type="radio" id="male" name="genre" value="masculin">
+                <label for="male">masculin:</label>
+            </fieldset>
+            <label for="nbr">age:</label>
+            <input type="number" id="nbr" name="age">
+            <br>
+            Quantite: <input type="number" name="qte" step="1" max="24" min="0">
+            <fieldset>
+                <legend>cars:</legend>
+                <input type="checkbox" id="id_mercedes" name="car" value="mercedes">
+                <label for="id_mercedes">j'ai une mercedes</label>
+                <input type="checkbox" checked id="id_BMW" name="car" value="BMW">
+                <label for="id_BMW">j'ai une BMW</label>
+                <input type="checkbox" id="id_audi" name="car" value="audi">
+                <label for="id_audi">j'ai une audi</label>
+            </fieldset>
+            <br>  
+            ville:  
+            <select name="city">
+                <option value="" selected>--choisir--</option>
+
+                <option value="Casa">casa</option>
+                <option value="Settat">settat</option> 
+                <option value="Berrechid">berrechid</option> 
+                <option value="Sidi kacem" >sidi kacem</option> 
+                <option value="Sidi bibi">sidi bibi</option>
+            
+            </select>
+            <br>
+            <input type="button" value="click here" onclick="f1()">              <input type="button" value="click here" onclick="f1()">
+            <input type="button" value="click here1" onclick="alert('hey')">
+            <br>
+            couleur: <input type="color" name="couleur" value="#0000ff">
+            <br>
+            volume: <input type="range" name="volume" min="0" max="10">
+            <br>
+            anniversaire: <input type="date" name="ann"> 
+            <br>
+            rendez-vouz: <input type="time" name="rdv">
+            <br>
+            datetime-local: <input type="datetime-local" name="dtl">
+            <br>
+            month: <input type="month" name="anniv">
+            <br>
+            fichier: <input type="file" name="fichier">
+            <br>
+            email: <input type="email" name="email">
+            <br>
+            phone: <input type="tel" pattern="0[567][0-9]{8}">
+            <br>
+            CIN: <input name="CIN" pattern="[A-Z]{1,2}[0-9]{1,8}">
+            <br>
+            filiere: <input value="TDD" readonly>
+            <br>
+            nom: <input type="nom" maxlength="8">
+            <br>
+            <label for="fichiers">selectionner des fichiers</label>
+            <input type="file" id="fichiers" name="fichiers" multiple>
+            <br>
+            
+            <input  name="prenom" placeholder="entrez votre prenom" required>
+            <br>
+            <input type="submit" value="send">
+            
+    </form>
+
+    <script>
+        function f1(){
+            alert ('hello')
+        }
+
+    </script>
+</body>
+</html>
